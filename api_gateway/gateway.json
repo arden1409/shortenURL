@@ -1,0 +1,19 @@
+﻿{
+    "Routes": [
+        {
+            "DownstreamPathTemplate": "/api/urls/shorten",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5678
+                }
+            ],
+            "UpstreamPathTemplate": "/urls",
+            "UpstreamHttpMethod": [ "POST" ]
+        }
+    ],
+    "GlobalConfiguration": {
+        "BaseUrl": "https://localhost:7072"
+    }
+}
